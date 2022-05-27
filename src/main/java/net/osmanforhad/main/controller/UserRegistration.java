@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import net.osmanforhad.main.controller.dto.UserRegistrationDto;
+import net.osmanforhad.main.dto.UserRegistrationDto;
 import net.osmanforhad.main.service.UserService;
 
 @Controller

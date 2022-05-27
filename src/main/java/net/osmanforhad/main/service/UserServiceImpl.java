@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import org.springframework.stereotype.Service;
 
-import net.osmanforhad.main.controller.dto.UserRegistrationDto;
+import net.osmanforhad.main.dto.UserRegistrationDto;
 import net.osmanforhad.main.model.Role;
 import net.osmanforhad.main.model.User;
 import net.osmanforhad.main.repository.UserRepository;

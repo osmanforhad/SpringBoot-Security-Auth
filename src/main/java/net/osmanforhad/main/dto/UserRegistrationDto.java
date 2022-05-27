@@ -1,4 +1,4 @@
-package net.osmanforhad.main.controller.dto;
+package net.osmanforhad.main.dto;
 
 public class UserRegistrationDto {
 	
