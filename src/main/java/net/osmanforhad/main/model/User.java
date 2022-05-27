@@ -1,6 +1,7 @@
 package net.osmanforhad.main.model;
 
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -43,7 +44,8 @@ public class User {
 			joinColumns = @JoinColumn(
 					name = "user_id", referencedColumnName = "id"),
 			inverseJoinColumns = @JoinColumn(
-					name = "role_id", referencedColumnName = "id")
+					name = "user_id", referencedColumnName = "id"
+					)
 			)
 	private Collection<Role> roles;
 	
@@ -53,9 +55,9 @@ public class User {
 	}
 	
 	//all argument constructor
-	public User(Long id, String firstName, String lastName, String email, String password, Collection<Role> roles) {
+	public User( String firstName, String lastName, String email, String password, Collection<Role> roles) {
 		super();
-		this.id = id;
+
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;

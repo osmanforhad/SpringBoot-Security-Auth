@@ -24,9 +24,8 @@ public class Role {
 	}
 	
 	//all argument constructor
-	public Role(Long id, String name) {
+	public Role(String name) {
 		super();
-		this.id = id;
 		this.name = name;
 	}
 	
