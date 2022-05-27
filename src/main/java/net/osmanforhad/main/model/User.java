@@ -1,7 +1,6 @@
 package net.osmanforhad.main.model;
 
 import java.util.Collection;
-import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -42,11 +41,10 @@ public class User {
 	@JoinTable(
 			name = "users_roles",
 			joinColumns = @JoinColumn(
-					name = "user_id", referencedColumnName = "id"),
+		            name = "user_id", referencedColumnName = "id"),
 			inverseJoinColumns = @JoinColumn(
-					name = "user_id", referencedColumnName = "id"
-					)
-			)
+				            name = "role_id", referencedColumnName = "id"))
+	
 	private Collection<Role> roles;
 	
 	//no argument constructor

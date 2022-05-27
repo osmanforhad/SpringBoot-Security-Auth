@@ -22,6 +22,12 @@ public class UserRegistration {
 		this.userService = userService;
 	}
 	
+	//create empty user object to store form data
+	@ModelAttribute("user")
+	public UserRegistrationDto  userRegistrationDto() {
+		return new UserRegistrationDto();
+	}
+	
 	//method for view registration page
 	@GetMapping
 	public String showRegistrationForm() {
