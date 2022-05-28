@@ -3,7 +3,7 @@ package net.osmanforhad.main.dto;
 public class UserRegistrationDto {
 	
 	private String firstName;
-	private String lstName;
+	private String lastName;
 	private String email;
 	private String password;
 	
@@ -14,10 +14,10 @@ public class UserRegistrationDto {
 	}
 
 	//all argument constructor
-	public UserRegistrationDto(String firstName, String lstName, String email, String password) {
+	public UserRegistrationDto(String firstName, String lastName, String email, String password) {
 		super();
 		this.firstName = firstName;
-		this.lstName = lstName;
+		this.lastName = lastName;
 		this.email = email;
 		this.password = password;
 	}
@@ -31,12 +31,12 @@ public class UserRegistrationDto {
 		this.firstName = firstName;
 	}
 
-	public String getLstName() {
-		return lstName;
+	public String getLastName() {
+		return lastName;
 	}
 
-	public void setLstName(String lstName) {
-		this.lstName = lstName;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getEmail() {
