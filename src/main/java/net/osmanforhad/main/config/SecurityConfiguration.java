@@ -1,5 +1,6 @@
 package net.osmanforhad.main.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -18,6 +19,7 @@ import net.osmanforhad.main.service.UserService;
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 
 	//inject UserService Interface as dependency
+	@Autowired
 	private UserService userService;
 	
 	@Bean
