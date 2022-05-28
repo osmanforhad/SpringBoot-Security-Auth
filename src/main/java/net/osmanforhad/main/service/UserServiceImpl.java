@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService{
 	public User save(UserRegistrationDto registrationDto) {
 		//create User model object and pass user input
 		User user = new User(registrationDto.getFirstName(),
-				registrationDto.getLstName(),
+				registrationDto.getLastName(),
 				registrationDto.getEmail(),
 				passwordEncoder.encode(registrationDto.getPassword()),
 				Arrays.asList(new Role("ROLE_USER"))
